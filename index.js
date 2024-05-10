@@ -7,22 +7,22 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
 
-app.set('view engine', 'html');
-app.engine('html', require('ejs').renderFile);
+// app.set('view engine', 'html');
+// app.engine('html', require('ejs').renderFile);
 
-// app.set("view engine", "ejs");
-// app.set("views", path.join(__dirname, "/views"));
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "/views"));
 
-// app.use(express.static('public'));
+app.use(express.static('public'));
 
 // app.use('/particles', express.static('particles'))
 
 app.get('/', (req, res) => {
-    res.render('home.html');
+    res.render('home.ejs');
 });
 
 app.get('/home', (req, res) => {
-    res.render('home.html');
+    res.render('home.ejs');
 });
 
 app.get('/architecture', (req, res) => {
