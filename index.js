@@ -10,10 +10,10 @@ app.listen(PORT, () => {
 app.set('view engine', 'html');
 app.engine('html', require('ejs').renderFile);
 
-app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "/views"));
+// app.set("view engine", "ejs");
+// app.set("views", path.join(__dirname, "/views"));
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 // app.use('/particles', express.static('particles'))
 
