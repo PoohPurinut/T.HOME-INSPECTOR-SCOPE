@@ -7,6 +7,11 @@
     <title>T.HOME INSPECTOR</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt&display=swap"
+        rel="stylesheet">
     <style>
         * {
             font-family: "Kanit", sans-serif;
@@ -29,14 +34,23 @@
         @media (max-width: 576px) {
             #res-head-img {
                 font-size: 17px;
+                font-family: "Kanit", sans-serif;
+                font-weight: 400;
+                font-style: normal;
             }
 
             #res-title-img {
                 font-size: 10px;
+                font-family: "Kanit", sans-serif;
+                font-weight: 400;
+                font-style: normal;
             }
 
             #res-head-btn {
                 font-size: 12px;
+                font-family: "Kanit", sans-serif;
+                font-weight: 400;
+                font-style: normal;
             }
 
             .card-img-top {
@@ -46,8 +60,13 @@
             /* .card-body-height {
                 height: 15px;
             } */
-        }
 
+            #kanit-regular {
+                font-family: "Kanit", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+        }
     </style>
 </head>
 
@@ -64,13 +83,14 @@
                 </span>
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link fw-bolder" aria-current="page" href="/home#scope">สโคปในการตรวจ</a>
+                        <a class="nav-link fw-bolder" aria-current="page" href="/home#scope"
+                            id="kanit-regular">สโคปในการตรวจ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bolder" href="/home#noscope">รายการที่ไม่ได้ตรวจสอบ</a>
+                        <a class="nav-link fw-bolder" href="/home#noscope" id="kanit-regular">รายการที่ไม่ได้ตรวจสอบ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bolder" href="/home#limit">ข้อจำกัดการตรวจสอบ</a>
+                        <a class="nav-link fw-bolder" href="/home#limit" id="kanit-regular">ข้อจำกัดการตรวจสอบ</a>
                     </li>
                 </ul>
             </div>
@@ -85,7 +105,8 @@
             <!-- <div class="text-light fw-bolder kanit-regular">สโคปงานในการตรวจบ้าน</div>
             <div class="text-light fw-lighter kanit-regular">
                 ตรวจสอบความเรียบร้อยของบ้านก่อนโอนกรรมสิทธิ์</div> -->
-            <div class="text-light img-head fw-bolder kanit-regular" id="res-head-img">สโคปงานในการตรวจบ้าน</div>
+            <div class="text-light img-head fw-bolder kanit-regular" id="res-head-img">
+                สโคปงานในการตรวจบ้าน</div>
             <div class="text-light fw-lighter kanit-regular" id="res-title-img">
                 ตรวจสอบความเรียบร้อยของบ้านก่อนโอนกรรมสิทธิ์</div>
         </div>
@@ -95,7 +116,7 @@
 
     <!-- Checked -->
     <div class="container" id="scope">
-        <p class="fs-3 fw-semibold">
+        <p class="fs-3 fw-semibold" id="kanit-regular">
             สโคปงานในการตรวจบ้าน
         </p>
         <div class="row row-cols-2 row-cols-md-3 g-4">
@@ -159,7 +180,7 @@
 
     <!-- Unchecked -->
     <div class="container" id="noscope">
-        <p class="fs-3 fw-semibold">
+        <p class="fs-3 fw-semibold" id="kanit-regular">
             รายการที่ไม่ได้ตรวจสอบ
         </p>
         <img src="https://i.ibb.co/0tQYCYk/1.png" class="img-fluid" alt="...">
@@ -168,7 +189,7 @@
 
     <!-- Limitation -->
     <div class="container" id="limit">
-        <p class="fs-3 fw-semibold">
+        <p class="fs-3 fw-semibold" id="kanit-regular">
             ข้อจำกัดการตรวจสอบ
         </p>
         <div>

@@ -18,31 +18,31 @@ app.use(express.static('public'));
 // app.use('/particles', express.static('particles'))
 
 app.get('/', (req, res) => {
-    res.render('home');
+    res.render('home.ejs');
 });
 
 app.get('/home', (req, res) => {
-    res.render('home');
+    res.render('home.ejs');
 });
 
 app.get('/architecture', (req, res) => {
-    res.render('architecture');
+    res.render('architecture.ejs');
 });
 
 app.get('/electrical', (req, res) => {
-    res.render('electrical');
+    res.render('electrical.ejs');
 });
 
-app.get('/leaking', (req, res) => {
-    res.render('leakage');
+app.get('/leakage', (req, res) => {
+    res.render('leakage.ejs');
 });
 
 app.get('/roof', (req, res) => {
-    res.render('roof');
+    res.render('roof.ejs');
 });
 
 app.get('/sanitary', (req, res) => {
-    res.render('sanitary');
+    res.render('sanitary.ejs');
 });
 
 app.get('*', (req, res) => {
