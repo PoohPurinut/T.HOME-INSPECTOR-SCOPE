@@ -13,20 +13,47 @@
             font-weight: 400;
             font-style: normal;
         }
+
+        .img-head {
+            font-size: 40px;
+        }
+
+        .card-img-top {
+                height: 165px;
+                /* กำหนดความสูงของรูปภาพที่เท่ากันที่คุณต้องการ */
+            }
+        
+        .card-body-height {
+            height: 60px;
+        }
+
         @media (max-width: 576px) {
-            #card-titles {
-                font-size: 14px;
+            #res-head-img {
+                font-size: 17px;
             }
-            #button-titles {
-                font-size: 12px;
+
+            #res-title-img {
+                font-size: 10px;
             }
-            #image-titles {
-                font-size: 8px;
+
+            #res-title-btn {
+                font-size: 10px;
             }
-            #image-head-titles {
-                font-size: 13px;
+
+            #res-head-btn {
+                font-size: 11px;
+            }
+
+            .card-img-top {
+                height: 100px;
+                /* กำหนดความสูงของรูปภาพที่เท่ากันที่คุณต้องการ */
+            }
+            .card-body-height {
+                height: 15px;
             }
         }
+
+        */
     </style>
 </head>
 
@@ -58,10 +85,15 @@
 
     <!-- Image -->
     <div class="container-fluid" style="position: relative;">
-        <img src="https://img5.pic.in.th/file/secure-sv1/DJI_1839.jpeg" class="img-fluid" alt="..." style="max-height: 550px; width: 100%;">
-        <div style="position: absolute; bottom: 12.5%; left: 7.5%;">
-            <div class="text-light fw-bolder kanit-regular" id="image-head-titles">สโคปงานในการตรวจบ้าน</div>
-            <div class="text-light fw-lighter kanit-regular" id="image-titles">ตรวจสอบความเรียบร้อยของบ้านก่อนโอนกรรมสิทธิ์</div>
+        <img src="https://img5.pic.in.th/file/secure-sv1/DJI_1839.jpeg" class="img-fluid" alt="..."
+            style="max-height: 550px; width: 100%;">
+        <div style="position: absolute; bottom: 15%; left: 7.5%;">
+            <!-- <div class="text-light fw-bolder kanit-regular">สโคปงานในการตรวจบ้าน</div>
+            <div class="text-light fw-lighter kanit-regular">
+                ตรวจสอบความเรียบร้อยของบ้านก่อนโอนกรรมสิทธิ์</div> -->
+            <div class="text-light img-head fw-bolder kanit-regular" id="res-head-img">สโคปงานในการตรวจบ้าน</div>
+            <div class="text-light fw-lighter kanit-regular" id="res-title-img">
+                ตรวจสอบความเรียบร้อยของบ้านก่อนโอนกรรมสิทธิ์</div>
         </div>
     </div>
     <br>
@@ -75,66 +107,51 @@
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
             <div class="col">
                 <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-                    <img src="https://img5.pic.in.th/file/secure-sv1/IMG_4566fa06531835e03e2b.jpeg" class="card-img-top img-thumbnail" style="height: 100%;" alt="..." />
-                    <div class="card-body" style="height: 100px">
-                        <h5 class="card-title fw-semibold" id="card-titles">หมวดงานระบบสุขาภิบาล</h5>
-                        <!-- <p class="card-text">
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p> -->
-                        <a href="/sanitary" class="btn btn-secondary" id="button-titles">อ่านรายละเอียด</a>
+                    <img src="https://img5.pic.in.th/file/secure-sv1/IMG_4566fa06531835e03e2b.jpeg"
+                        class="card-img-top img-thumbnail" alt="..." style="width: 100%;" />
+                    <div class="card-body card-body-height">
+                        <h5 class="card-title fw-semibold" id="res-head-btn">หมวดงานระบบสุขาภิบาล</h5>
+                        <a href="/sanitary" class="btn btn-secondary" id="res-title-btn">อ่านรายละเอียด</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-                    <img src="https://img5.pic.in.th/file/secure-sv1/IMG_3967d72df4438ea3740a.jpeg" class="card-img-top img-thumbnail" style="height: 100%;" alt="..." />
-                    <div class="card-body" style="height: 100px">
-                        <h5 class="card-title fw-semibold" id="card-titles">หมวดงานระบบไฟฟ้า</h5>
-                        <!-- <p class="card-text">This is a short card.</p> -->
-                        <a href="/electrical" class="btn btn-secondary" id="button-titles">อ่านรายละเอียด</a>
+                    <img src="https://img5.pic.in.th/file/secure-sv1/IMG_3967d72df4438ea3740a.jpeg"
+                        class="card-img-top img-thumbnail" alt="..." style="width: 100%;" />
+                    <div class="card-body card-body-height">
+                        <h5 class="card-title fw-semibold" id="res-head-btn">หมวดงานระบบไฟฟ้า</h5>
+                        <a href="/electrical" class="btn btn-secondary" id="res-title-btn">อ่านรายละเอียด</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-                    <img src="https://img5.pic.in.th/file/secure-sv1/IMG_385622d9879ce70bb923.jpeg" class="card-img-top img-thumbnail" style="height: 100%;" alt="..." />
-                    <div class="card-body" style="height: 100px">
-                        <h5 class="card-title fw-semibold" id="card-titles">หมวดงานรั่วซึม</h5>
-                        <!-- <p class="card-text">
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content.
-                  </p> -->
-                        <a href="/leaking" class="btn btn-secondary" id="button-titles">อ่านรายละเอียด</a>
+                    <img src="https://img5.pic.in.th/file/secure-sv1/IMG_385622d9879ce70bb923.jpeg"
+                        class="card-img-top img-thumbnail" alt="..." style="width: 100%;" />
+                    <div class="card-body card-body-height">
+                        <h5 class="card-title fw-semibold" id="res-head-btn">หมวดงานรั่วซึม</h5>
+                        <a href="/leaking" class="btn btn-secondary" id="res-title-btn">อ่านรายละเอียด</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-                    <img src="https://img2.pic.in.th/pic/IMG_08929dc5ef2ce362eb8c.jpeg" class="img-thumbnail" style="height: 100%;" alt="..." />
-                    <div class="card-body" style="height: 100px">
-                        <h5 class="card-title fw-semibold" id="card-titles">หมวดงานหลังคา</h5>
-                        <!-- <p class="card-text">
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p> -->
-                        <a href="/roof" class="btn btn-secondary" id="button-titles">อ่านรายละเอียด</a>
+                    <img src="https://img2.pic.in.th/pic/IMG_08929dc5ef2ce362eb8c.jpeg" class="card-img-top img-thumbnail" alt="..."
+                        style="width: 100%;" />
+                    <div class="card-body card-body-height">
+                        <h5 class="card-title fw-semibold" id="res-head-btn">หมวดงานหลังคา</h5>
+                        <a href="/roof" class="btn btn-secondary" id="res-title-btn">อ่านรายละเอียด</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-                    <img src="https://img2.pic.in.th/pic/IMG_3954.jpeg" class="card-img-top img-thumbnail" style="height: 100%;" alt="..." />
-                    <div class="card-body" style="height: 100px">
-                        <h5 class="card-title fw-semibold" id="card-titles">หมวดงานสถาปัตยกรรม</h5>
-                        <!-- <p class="card-text">
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p> -->
-                        <a href="/architecture" class="btn btn-secondary" id="button-titles">อ่านรายละเอียด</a>
+                    <img src="https://img2.pic.in.th/pic/IMG_3954.jpeg" class="card-img-top img-thumbnail" alt="..."
+                        style="width: 100%;" />
+                    <div class="card-body card-body-height">
+                        <h5 class="card-title fw-semibold" id="res-head-btn">หมวดงานสถาปัตยกรรม</h5>
+                        <a href="/architecture" class="btn btn-secondary" id="res-title-btn">อ่านรายละเอียด</a>
                     </div>
                 </div>
             </div>
