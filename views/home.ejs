@@ -20,12 +20,11 @@
 
         .card-img-top {
             height: 165px;
-            /* กำหนดความสูงของรูปภาพที่เท่ากันที่คุณต้องการ */
         }
 
-        .card-body-height {
+        /* .card-body-height {
             height: 60px;
-        }
+        } */
 
         @media (max-width: 576px) {
             #res-head-img {
@@ -36,25 +35,19 @@
                 font-size: 10px;
             }
 
-            #res-title-btn {
-                font-size: 10px;
-            }
-
             #res-head-btn {
-                font-size: 15px;
+                font-size: 12px;
             }
 
             .card-img-top {
                 height: 100px;
-                /* กำหนดความสูงของรูปภาพที่เท่ากันที่คุณต้องการ */
             }
 
-            .card-body-height {
+            /* .card-body-height {
                 height: 15px;
-            }
+            } */
         }
 
-        */
     </style>
 </head>
 
@@ -105,60 +98,64 @@
         <p class="fs-3 fw-semibold">
             สโคปงานในการตรวจบ้าน
         </p>
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="row row-cols-2 row-cols-md-3 g-4">
             <div class="col">
-                <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-                    <img src="https://img5.pic.in.th/file/secure-sv1/IMG_4566fa06531835e03e2b.jpeg"
-                        class="card-img-top img-thumbnail" alt="..." style="width: 100%;" />
-                    <div class="card-body card-body-height">
-                        <h5 class="card-title fw-semibold" id="res-head-btn">หมวดงานระบบสุขาภิบาล</h5>
-                        <a href="/sanitary" class="btn btn-secondary" id="res-title-btn">อ่านรายละเอียด</a>
+                <a href="/electrical" class="text-decoration-none">
+                    <div class="card h-100 border-0">
+                        <img src="https://img5.pic.in.th/file/secure-sv1/IMG_3967d72df4438ea3740a.jpeg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" id="res-head-btn">หมวดงานระบบไฟฟ้า</h5>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-                    <img src="https://img5.pic.in.th/file/secure-sv1/IMG_3967d72df4438ea3740a.jpeg"
-                        class="card-img-top img-thumbnail" alt="..." style="width: 100%;" />
-                    <div class="card-body card-body-height">
-                        <h5 class="card-title fw-semibold" id="res-head-btn">หมวดงานระบบไฟฟ้า</h5>
-                        <a href="/electrical" class="btn btn-secondary" id="res-title-btn">อ่านรายละเอียด</a>
+                <a href="/sanitary" class="text-decoration-none">
+                    <div class="card h-100 border-0">
+                        <img src="https://img5.pic.in.th/file/secure-sv1/IMG_4566fa06531835e03e2b.jpeg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" id="res-head-btn">หมวดงานระบบสุขาภิบาล</h5>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-                    <img src="https://img5.pic.in.th/file/secure-sv1/IMG_385622d9879ce70bb923.jpeg"
-                        class="card-img-top img-thumbnail" alt="..." style="width: 100%;" />
-                    <div class="card-body card-body-height">
-                        <h5 class="card-title fw-semibold" id="res-head-btn">หมวดงานรั่วซึม</h5>
-                        <a href="/leaking" class="btn btn-secondary" id="res-title-btn">อ่านรายละเอียด</a>
+                <a href="/leakage" class="text-decoration-none">
+                    <div class="card h-100 border-0">
+                        <img src="https://img5.pic.in.th/file/secure-sv1/IMG_385622d9879ce70bb923.jpeg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" id="res-head-btn">หมวดงานรั่วซึม</h5>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-                    <img src="https://img2.pic.in.th/pic/IMG_08929dc5ef2ce362eb8c.jpeg"
-                        class="card-img-top img-thumbnail" alt="..." style="width: 100%;" />
-                    <div class="card-body card-body-height">
-                        <h5 class="card-title fw-semibold" id="res-head-btn">หมวดงานหลังคา</h5>
-                        <a href="/roof" class="btn btn-secondary" id="res-title-btn">อ่านรายละเอียด</a>
+                <a href="/roof" class="text-decoration-none">
+                    <div class="card h-100 border-0">
+                        <img src="https://img2.pic.in.th/pic/IMG_08929dc5ef2ce362eb8c.jpeg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" id="res-head-btn">หมวดงานหลังคา</h5>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div class="card h-100 shadow p-3 mb-5 bg-body-tertiary rounded">
-                    <img src="https://img2.pic.in.th/pic/IMG_3954.jpeg" class="card-img-top img-thumbnail" alt="..."
-                        style="width: 100%;" />
-                    <div class="card-body card-body-height">
-                        <h5 class="card-title fw-semibold" id="res-head-btn">หมวดงานสถาปัตยกรรม</h5>
-                        <a href="/architecture" class="btn btn-secondary" id="res-title-btn">อ่านรายละเอียด</a>
+                <a href="/architecture" class="text-decoration-none">
+                    <div class="card h-100 border-0">
+                        <img src="https://img2.pic.in.th/pic/IMG_3954.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" id="res-head-btn">หมวดงานสถาปัตยกรรม</h5>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
+        <br>
     </div>
-    <br>
 
     <!-- Unchecked -->
     <div class="container" id="noscope">
