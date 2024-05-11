@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    * {
+      font-family: "Kanit", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    #res-head-img {
+      font-size: 20px;
+    }
+
+    .card-img-top {
+      height: 180px;
+    }
+
+    .navbar-nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+
+
+    @media (max-width: 576px) {
+      #res-head-img {
+        font-size: 9px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      #res-title-img {
+        font-size: 6px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      #res-head-btn {
+        font-size: 12px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .card-img-top {
+        height: 125px;
+      }
+
+      .card-article-img-top {
+        height: 375px;
+        width: 375;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="col sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://www.thomeinspector.com/assets/img/systemimg/logo.png" alt="Logo" width="186.2" height="36"
+            class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                สโคปในการตรวจสอบ
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/electrical">หมวดงานระบบไฟฟ้า</a></li>
+                <li><a class="dropdown-item" href="/sanitary">หมวดงานระบบสุขาภิบาล</a></li>
+                <li><a class="dropdown-item" href="/leakage">หมวดงานรั่วซึม</a></li>
+                <li><a class="dropdown-item" href="/roof">หมวดงานหลังคา</a></li>
+                <li><a class="dropdown-item" href="/architecture">หมวดงานสถาปัตยกรรม</a></li>
+                <li><a class="dropdown-item" href="#">รายการที่ไม่ได้ตรวจสอบ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">ข้อจำกัดในการตรวจ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ตัวอย่างรายงายตรวจ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">คำถามที่พบบ่อย</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Image -->
+  <div class="container-fluid" style="position: relative; margin: 0; padding: 0;">
+    <img src="https://img5.pic.in.th/file/secure-sv1/DJI_1839.jpeg" class="img-fluid" alt="..."
+      style="max-height: 550px; width: 100%; filter: brightness(0.5);">
+    <div class="position-absolute top-50 start-50 translate-middle text-center">
+      <div class="text-light img-head fw-bolder kanit-regular" id="res-head-img">
+        บริษัทตรวจบ้านอันดับ 1 ที่ลูกค้าบอกต่อมากที่สุด</div>
+      <div class="text-light fw-lighter kanit-regular" id="res-title-img">
+        บริษัทตรวจสอบความเรียบร้อยของบ้านและคอนโดก่อนโอนกรรมสิทธิ์</div>
+    </div>
+  </div>
+  <br>
+
+  <!-- Checked and Unchecked -->
+  <div class="container" id="scope">
+    <p class="fs-3 fw-semibold" id="kanit-regular">
+      สโคปงานในการตรวจบ้าน
+    </p>
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      <div class="col">
+        <a href="/electrical" class="text-decoration-none">
+          <div class="card h-100 border-0">
+            <img src="https://img5.pic.in.th/file/secure-sv1/IMG_3967d72df4438ea3740a.jpeg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder" id="res-head-btn">หมวดงานระบบไฟฟ้า</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/sanitary" class="text-decoration-none">
+          <div class="card h-100 border-0">
+            <img src="https://img5.pic.in.th/file/secure-sv1/IMG_4566fa06531835e03e2b.jpeg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder" id="res-head-btn">หมวดงานระบบสุขาภิบาล</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/leakage" class="text-decoration-none">
+          <div class="card h-100 border-0">
+            <img src="https://img5.pic.in.th/file/secure-sv1/IMG_385622d9879ce70bb923.jpeg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder" id="res-head-btn">หมวดงานรั่วซึม</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/roof" class="text-decoration-none">
+          <div class="card h-100 border-0">
+            <img src="https://img2.pic.in.th/pic/IMG_08929dc5ef2ce362eb8c.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder" id="res-head-btn">หมวดงานหลังคา</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/architecture" class="text-decoration-none">
+          <div class="card h-100 border-0">
+            <img src="https://img2.pic.in.th/pic/IMG_3954.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder" id="res-head-btn">หมวดงานสถาปัตยกรรม</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card h-100 border-0">
+            <img src="https://img2.pic.in.th/pic/IMG_3954.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder text-danger" id="res-head-btn">รายการที่ไม่ได้ตรวจสอบ</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <hr>
+  </div>
+
+  <!-- Blocks -->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" style="position: relative;">
+        <a href="#" class="text-decoration-none">
+          <div class="card h-100 border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder text-decoration-none">ข้อจำกัดในการตรวจสอบ</h5>
+            </div>
+            <img src="https://i.ibb.co/dWnv5KX/1-2.png" class="card-article-img-top" alt="..."
+              style="filter: brightness(0.5);">
+            <div
+              class="p-3 mb-2 bg-warning text-light position-absolute bottom-0 start-50 translate-middle fw-semibold">
+              LEARN MORE</div>
+          </div>
+        </a>
+      </div>
+      <div class="col" style="position: relative;">
+        <a href="#" class="text-decoration-none">
+          <div class="card h-100 border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder text-decoration-none">ตัวอย่างรายงานการตรวจ</h5>
+            </div>
+            <img src="https://i.ibb.co/dWnv5KX/1-2.png" class="card-article-img-top" alt="..."
+              style="filter: brightness(0.5);">
+            <div
+              class="p-3 mb-2 bg-warning text-light position-absolute bottom-0 start-50 translate-middle fw-semibold">
+              LEARN MORE</div>
+          </div>
+        </a>
+      </div>
+      <div class="col" style="position: relative;">
+        <a href="" class="text-decoration-none">
+          <div class="card h-100 border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder">ข้อจำกัดในการตรวจสอบ</h5>
+            </div>
+            <img src="https://i.ibb.co/dWnv5KX/1-2.png" class="card-article-img-top" alt="..."
+              style="filter: brightness(0.5);">
+            <div
+              class="p-3 mb-2 bg-warning text-light position-absolute bottom-0 start-50 translate-middle fw-semibold">
+              LEARN MORE</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- Questions -->
+  <div class="container">
+    <p class="fs-3 fw-bolder">คำถามที่พบบ่อย Frequently Asked Questions</p>
+    <a href="#" class="text-decoration-none text-dark">
+      <div class="p-3 mb-2 bg-body-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+        </svg> เราแตกต่างจากที่อื่นอย่างไร</div>
+    </a>
+    <a href="#" class="text-decoration-none text-dark">
+      <div class="p-3 mb-2 bg-body-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+        </svg> มีรับประกันตรวจสอบไหม</div>
+    </a>
+    <a href="#" class="text-decoration-none text-dark">
+      <div class="p-3 mb-2 bg-body-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+        </svg> ตรวจเรื่องความสวยงามด้วยมั้ย</div>
+    </a>
+    <a href="#" class="text-decoration-none text-dark">
+      <div class="p-3 mb-2 bg-body-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+        </svg> ตรวจเรื่องความสวยงามด้วยมั้ย</div>
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

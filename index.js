@@ -18,11 +18,11 @@ app.use(express.static('public'));
 // app.use('/particles', express.static('particles'))
 
 app.get('/', (req, res) => {
-    res.render('home.ejs');
+    res.render('index.ejs');
 });
 
 app.get('/home', (req, res) => {
-    res.render('home.ejs');
+    res.render('index.ejs');
 });
 
 app.get('/architecture', (req, res) => {
