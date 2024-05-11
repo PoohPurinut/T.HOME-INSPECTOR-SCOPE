@@ -45,6 +45,14 @@ app.get('/sanitary', (req, res) => {
     res.render('sanitary.ejs');
 });
 
+app.get('/limitation', (req, res) => {
+    res.render('limit.ejs');
+});
+
+app.get('/unchecked', (req, res) => {
+    res.render('unchecked.ejs');
+});
+
 app.get('*', (req, res) => {
     res.status(404).send('Page Not Found');
 });
