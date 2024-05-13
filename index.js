@@ -57,6 +57,15 @@ app.get('/videoelectrical', (req, res) => {
     res.render('videoelectrical.ejs');
 });
 
+app.get('/videosanitary', (req, res) => {
+    res.render('videosanitary.ejs');
+});
+
+app.get('/videoleakage', (req, res) => {
+    res.render('videoleakage.ejs');
+});
+
+
 app.get('*', (req, res) => {
     res.status(404).send('Page Not Found');
 });
