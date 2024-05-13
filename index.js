@@ -65,6 +65,13 @@ app.get('/videoleakage', (req, res) => {
     res.render('videoleakage.ejs');
 });
 
+app.get('/videoarchitecture', (req, res) => {
+    res.render('videoarchitecture.ejs');
+});
+
+app.get('/videoroof', (req, res) => {
+    res.render('videoroof.ejs');
+});
 
 app.get('*', (req, res) => {
     res.status(404).send('Page Not Found');
