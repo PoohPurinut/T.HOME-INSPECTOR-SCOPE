@@ -53,6 +53,10 @@ app.get('/unchecked', (req, res) => {
     res.render('unchecked.ejs');
 });
 
+app.get('/videoelectrical', (req, res) => {
+    res.render('videoelectrical.ejs');
+});
+
 app.get('*', (req, res) => {
     res.status(404).send('Page Not Found');
 });

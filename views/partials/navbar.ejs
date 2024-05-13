@@ -19,6 +19,35 @@
             font-style: normal;
         }
 
+        @media only screen and (min-width: 1024px) {
+            .video {
+                width: 70%;
+            }
+
+            .info {
+                width: 30%;
+            }
+        }
+
+        .dropdown-toggle-video {
+            text-align: left;
+            position: relative;
+        }
+
+        .dropdown-toggle-video::after {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
         #res-head-img {
             font-size: 34px;
         }
@@ -108,7 +137,8 @@
                                 <li><a class="dropdown-item" href="/leakage">หมวดงานรั่วซึม</a></li>
                                 <li><a class="dropdown-item" href="/roof">หมวดงานหลังคา</a></li>
                                 <li><a class="dropdown-item" href="/architecture">หมวดงานสถาปัตยกรรม</a></li>
-                                <li><a class="dropdown-item text-danger" href="/unchecked">รายการที่ไม่ได้ตรวจสอบ</a></li>
+                                <li><a class="dropdown-item text-danger" href="/unchecked">รายการที่ไม่ได้ตรวจสอบ</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -116,6 +146,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">ตัวอย่างรายงานการตรวจ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/videoelectrical">วิธีการตรวจสอบ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">คำถามที่พบบ่อย</a>
