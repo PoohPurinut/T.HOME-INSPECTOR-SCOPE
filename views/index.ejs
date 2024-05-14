@@ -4,11 +4,11 @@
   <div class="container-fluid" style="position: relative; margin: 0; padding: 0;">
     <!-- <img src="https://img5.pic.in.th/file/secure-sv1/DJI_1839.jpeg" class="img-fluid" alt="..."
       style="max-height: 550px; width: 100%; filter: brightness(0.5);"> -->
-      <!-- <a href="https://ibb.co/pn1Cj7f"><img src="https://i.ibb.co/7bS7tfn/88.jpg" alt="88" border="0"></a> -->
-      <!-- <img src="https://i.ibb.co/7bS7tfn/88.jpg" class="img-fluid" alt="..."
+    <!-- <a href="https://ibb.co/pn1Cj7f"><img src="https://i.ibb.co/7bS7tfn/88.jpg" alt="88" border="0"></a> -->
+    <!-- <img src="https://i.ibb.co/7bS7tfn/88.jpg" class="img-fluid" alt="..."
       style="max-height: 550px; width: 100%; filter: brightness(0.7);"> -->
-      <!-- <a href="https://ibb.co/HXXxW8N"><img src="https://i.ibb.co/M99GY08/3090-D65775-CE57-A4-F564-CEFCAD0-BA755.jpg" alt="3090-D65775-CE57-A4-F564-CEFCAD0-BA755" border="0"></a> -->
-      <img src="https://i.ibb.co/8zV2rLh/IMG-20240514-121107.jpg" class="img-fluid" alt="..."
+    <!-- <a href="https://ibb.co/HXXxW8N"><img src="https://i.ibb.co/M99GY08/3090-D65775-CE57-A4-F564-CEFCAD0-BA755.jpg" alt="3090-D65775-CE57-A4-F564-CEFCAD0-BA755" border="0"></a> -->
+    <img src="https://i.ibb.co/8zV2rLh/IMG-20240514-121107.jpg" class="img-fluid" alt="..."
       style="max-height: 550px; width: 100%; filter: brightness(0.7);">
     <div class="position-absolute top-50 start-50 translate-middle text-center">
       <div class="text-light fw-bolder kanit-regular" id="res-head-img">
@@ -51,9 +51,8 @@
         <a href="/leakage" class="text-decoration-none">
           <div class="card h-100 border-0">
             <!-- <img src="https://img5.pic.in.th/file/secure-sv1/IMG_385622d9879ce70bb923.jpeg" class="card-img-top"
-              alt="..."> --> 
-              <img src="https://i.ibb.co/37NKRrr/IMG-3855.jpg" class="card-img-top"
-              alt="...">
+              alt="..."> -->
+            <img src="https://i.ibb.co/37NKRrr/IMG-3855.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title fw-bolder" id="res-head-btn">หมวดงานรั่วซึม</h5>
             </div>
@@ -171,8 +170,73 @@
   </div>
 
   <br>
-  <!-- Questions -->
   <div class="container">
+    <div class="container">
+      <p class="fs-3 fw-bolder"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+          class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z" />
+        </svg> คำถามที่พบบ่อย Frequently Asked Questions</p>
+
+      <hr>
+      <button onclick="showAnswer1()" class="button-question">
+        <div class="p-3 text-start question position-relative">เราแตกต่างจากที่อื่นอย่างไร <svg id="down1"
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+            style="margin-right: 15px;">
+            <path
+              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg><svg id="down2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+            style="margin-right: 15px; display: none;">
+            <path
+              d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+          </svg></div>
+      </button>
+      <div id="answer1" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum corrupti
+        velit dolore?</div>
+
+      <hr>
+      <button onclick="showAnswer2()" class="button-question">
+        <div class="p-3 text-start hover question position-relative">มีรับประกันตรวจสอบไหม <svg id="down3"
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+            style="margin-right: 15px;">
+            <path
+              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg><svg id="down4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+            style="margin-right: 15px; display: none;">
+            <path
+              d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+          </svg></div>
+      </button>
+      <div id="answer2" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque repellat
+        optio, nihil odio laboriosam neque.</div>
+
+      <hr>
+      <button onclick="showAnswer3()" class="button-question">
+        <div class="p-3 text-start question position-relative">ตรวจเรื่องความสวยงามด้วยมั้ย <svg id="down5"
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+            style="margin-right: 15px;">
+            <path
+              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg><svg id="down6" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+            style="margin-right: 15px; display: none;">
+            <path
+              d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+          </svg></div>
+      </button>
+      <div id="answer3" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores
+        error tempore quidem ducimus iure rem mollitia perspiciatis saepe officiis.</div>
+      <hr>
+
+    </div>
+  </div>
+  <!-- Questions -->
+  <!-- <div class="container">
     <p class="fs-3 fw-bolder"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
         class="bi bi-question-circle-fill" viewBox="0 0 16 16">
         <path
@@ -206,7 +270,75 @@
             d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
         </svg> ตรวจเรื่องความสวยงามด้วยมั้ย</div>
     </a>
-  </div>
+  </div> -->
+
   <%- include('partials/scrollup.ejs') %>
 
-    <%- include('partials/footer.ejs') %>
+    <br>
+    <footer style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+      <p style="color: #666;">COPYRIGHT © BY ต.ตรวจบ้าน - ALL RIGHTS RESERVED</p>
+    </footer>
+    <script>const scrollUp = document.querySelector("#scroll-up");
+
+      scrollUp.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+      });
+
+      function showAnswer1() {
+        var answer = document.getElementById("answer1");
+        var down1 = document.getElementById("down1");
+        var down2 = document.getElementById("down2");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down1.style.display = "none"
+          down2.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down1.style.display = "inline"
+          down2.style.display = "none"
+        }
+      }
+      function showAnswer2() {
+        var answer = document.getElementById("answer2");
+        var down1 = document.getElementById("down3");
+        var down2 = document.getElementById("down4");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down1.style.display = "none"
+          down2.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down1.style.display = "inline"
+          down2.style.display = "none"
+        }
+      }
+      function showAnswer3() {
+        var answer = document.getElementById("answer3");
+        var down1 = document.getElementById("down5");
+        var down2 = document.getElementById("down6");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down1.style.display = "none"
+          down2.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down1.style.display = "inline"
+          down2.style.display = "none"
+        }
+      }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+    </body>
+
+    </html>
