@@ -231,6 +231,24 @@
       </button>
       <div id="answer3" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores
         error tempore quidem ducimus iure rem mollitia perspiciatis saepe officiis.</div>
+
+      <hr>
+      <button onclick="showAnswer4()" class="button-question">
+        <div class="p-3 text-start question position-relative">ตรวจเรื่องความสวยงามด้วยมั้ย <svg id="down7"
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+            style="margin-right: 15px;">
+            <path
+              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg><svg id="down8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+            style="margin-right: 15px; display: none;">
+            <path
+              d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+          </svg></div>
+      </button>
+      <div id="answer4" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores
+        error tempore quidem ducimus iure rem mollitia perspiciatis saepe officiis.</div>
       <hr>
 
     </div>
@@ -322,6 +340,21 @@
         var answer = document.getElementById("answer3");
         var down1 = document.getElementById("down5");
         var down2 = document.getElementById("down6");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down1.style.display = "none"
+          down2.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down1.style.display = "inline"
+          down2.style.display = "none"
+        }
+      }
+      function showAnswer4() {
+        var answer = document.getElementById("answer4");
+        var down1 = document.getElementById("down7");
+        var down2 = document.getElementById("down8");
 
         if (answer.style.display === "none") {
           answer.style.display = "block";
