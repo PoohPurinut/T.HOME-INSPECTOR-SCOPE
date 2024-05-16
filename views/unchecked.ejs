@@ -1,9 +1,451 @@
 <%- include('partials/navbar.ejs') %>
-    <br>
-    <div class="container" id="noscope">
-        <p class="fs-3 fw-semibold" id="kanit-regular">
-            รายการที่ไม่ได้ตรวจสอบ
-        </p>
-        <img src="https://i.ibb.co/0tQYCYk/1.png" class="img-fluid" alt="...">
-    </div>
-    <%- include('partials/footer.ejs') %>
+  <br>
+  <div class="container" id="noscope">
+    <h1 class="fw-bold color-navy">รายการที่ไม่ได้ตรวจสอบ</h1>
+    <div>งานระบบเฉพาะทางนั้น ทีมงานสามารถตรวจสอบดูให้ด้วยสายตาเป็นหลักในภาพรวม Visual Inspection
+      รอยขีดข่วน รอยเปื้อน รอยบิ่น ฯลฯ</div>
+    <!-- <img src="https://i.ibb.co/0tQYCYk/1.png" class="img-fluid" alt="..."> -->
+    <button onclick="showAnswer1()" class="button-question">
+      <div class="p-3 text-start question position-relative">1. ระบบโซลาร์เซลล์<svg id="down1"
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px;">
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg><svg id="up1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px; display: none;">
+          <path
+            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg></div>
+    </button>
+    <div id="answer1" style="display: none;">มีบินโดรนตรวจสภาพเเผงเบื้องต้นให้ เช่น การเเตกหัก หรือชำรุด</div>
+
+    <hr>
+    <button onclick="showAnswer2()" class="button-question">
+      <div class="p-3 text-start question position-relative">2. ท่อฉีดปลวก<svg id="down2"
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px;">
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg><svg id="up2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px; display: none;">
+          <path
+            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg></div>
+    </button>
+    <div id="answer2" style="display: none;">ตรวจสอบตำแหน่งการติดตั้งท่ออัดน้ำยาฉีดปลวกให้ (หากมี)</div>
+
+    <hr>
+    <button onclick="showAnswer3()" class="button-question">
+      <div class="p-3 text-start question position-relative">3. สระว่ายน้ำ/ปั๊มบ่อน้ำพุ<svg id="down3"
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px;">
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg><svg id="up3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px; display: none;">
+          <path
+            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg></div>
+    </button>
+    <div id="answer3" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti,
+      maiores. Sapiente, quas commodi? Veritatis animi fugit quas saepe corrupti reprehenderit. Temporibus
+      cupiditate aspernatur corrupti. Voluptates obcaecati harum ratione numquam debitis?</div>
+
+    <hr>
+    <button onclick="showAnswer4()" class="button-question">
+      <div class="p-3 text-start question position-relative">4. สระว่ายน้ำ<svg id="down4"
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px;">
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg><svg id="up4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px; display: none;">
+          <path
+            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg></div>
+    </button>
+    <div id="answer4" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti,
+      maiores. Sapiente, quas commodi? Veritatis animi fugit quas saepe corrupti reprehenderit. Temporibus
+      cupiditate aspernatur corrupti. Voluptates obcaecati harum ratione numquam debitis?</div>
+
+    <hr>
+    <button onclick="showAnswer5()" class="button-question">
+      <div class="p-3 text-start question position-relative">5. อ่างน้ำร้อน/อ่างสปา/จากุซซี่<svg id="down5"
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px;">
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg><svg id="up5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px; display: none;">
+          <path
+            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg></div>
+    </button>
+    <div id="answer5" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti,
+      maiores. Sapiente, quas commodi? Veritatis animi fugit quas saepe corrupti reprehenderit. Temporibus
+      cupiditate aspernatur corrupti. Voluptates obcaecati harum ratione numquam debitis?</div>
+
+    <hr>
+    <button onclick="showAnswer6()" class="button-question">
+      <div class="p-3 text-start question position-relative">6. ระบบรักษาความปลอดภัย<svg id="down6"
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px;">
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg><svg id="up6" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px; display: none;">
+          <path
+            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg></div>
+    </button>
+    <div id="answer6" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti,
+      maiores. Sapiente, quas commodi? Veritatis animi fugit quas saepe corrupti reprehenderit. Temporibus
+      cupiditate aspernatur corrupti. Voluptates obcaecati harum ratione numquam debitis?</div>
+
+    <hr>
+    <button onclick="showAnswer7()" class="button-question">
+      <div class="p-3 text-start question position-relative">7. บ่อน้ำพุ<svg id="down7"
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px;">
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg><svg id="up7" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px; display: none;">
+          <path
+            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg></div>
+    </button>
+    <div id="answer7" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti,
+      maiores. Sapiente, quas commodi? Veritatis animi fugit quas saepe corrupti reprehenderit. Temporibus
+      cupiditate aspernatur corrupti. Voluptates obcaecati harum ratione numquam debitis?</div>
+
+    <hr>
+    <button onclick="showAnswer8()" class="button-question">
+      <div class="p-3 text-start question position-relative">8. ลิฟท์โดยสาร<svg id="down8"
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px;">
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg><svg id="up8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px; display: none;">
+          <path
+            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg></div>
+    </button>
+    <div id="answer8" style="display: none;">จำเป็นต้องใช้ผู้เชี่ยวชาญโดยเฉพาะในการตรวจสอบ
+      โดยปกติแล้วงานลิฟท์โดยสารจะต้องมีบริการซ่อมบำรุง Preventive Maintenance หรือ PM รายปี
+      พร้อมออกใบรับรองมาตรฐานความปลอดภัยโดยวิศวกรเครื่องกลมืออาชีพ</div>
+
+    <hr>
+    <button onclick="showAnswer9()" class="button-question">
+      <div class="p-3 text-start question position-relative">9. ระบบสมาร์ทโฮมภายในบ้าน<svg id="down9"
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px;">
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg><svg id="up9" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px; display: none;">
+          <path
+            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg></div>
+    </button>
+    <div id="answer9" style="display: none;">อาจเป็นระบบเฉพาะทางหรือระบบที่จดสิทธิบัตรของบริษัทผู้พัฒนาบ้าน</div>
+
+    <hr>
+    <button onclick="showAnswer10()" class="button-question">
+      <div class="p-3 text-start question position-relative">10. มอเตอร์ประตูรั้ว<svg id="down10"
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px;">
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg><svg id="up10" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px; display: none;">
+          <path
+            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg></div>
+    </button>
+    <div id="answer10" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti,
+      maiores. Sapiente, quas commodi? Veritatis animi fugit quas saepe corrupti reprehenderit. Temporibus
+      cupiditate aspernatur corrupti. Voluptates obcaecati harum ratione numquam debitis?</div>
+
+    <hr>
+    <button onclick="showAnswer11()" class="button-question">
+      <div class="p-3 text-start question position-relative">11. ระบบท่อที่ฝังในผนัง<svg id="down11"
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px;">
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg><svg id="up11" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px; display: none;">
+          <path
+            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg></div>
+    </button>
+    <div id="answer11" style="display: none;">เนื่องจากไม่สามารถมองเห็นได้ด้วยตาเปล่าได้
+      ต้องใช้เครื่องตรวจเช็กท่อในผนังในการตรวจสอบโดยเฉพาะ</div>
+
+    <hr>
+    <button onclick="showAnswer12()" class="button-question">
+      <div class="p-3 text-start question position-relative">12. ระบบการเดินท่อน้ำทิ้งแอร์<svg id="down12"
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px;">
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+        </svg><svg id="up12" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-caret-up-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
+          style="margin-right: 15px; display: none;">
+          <path
+            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg></div>
+    </button>
+    <div id="answer12" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti,
+      maiores. Sapiente, quas commodi? Veritatis animi fugit quas saepe corrupti reprehenderit. Temporibus
+      cupiditate aspernatur corrupti. Voluptates obcaecati harum ratione numquam debitis?</div>
+
+
+
+
+
+  </div>
+
+  <br>
+  <footer style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+    <p style="color: #666;">COPYRIGHT © BY ต.ตรวจบ้าน - ALL RIGHTS RESERVED</p>
+  </footer>
+  <%- include('partials/scrollup.ejs') %>
+
+    <script>
+
+      const scrollUp = document.querySelector("#scroll-up");
+      scrollUp.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+      });
+
+      function showAnswer1() {
+        const answer = document.getElementById("answer1");
+        const down = document.getElementById("down1");
+        const up = document.getElementById("up1");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down.style.display = "none"
+          up.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down.style.display = "inline"
+          up.style.display = "none"
+        }
+      }
+
+      function showAnswer2() {
+        const answer = document.getElementById("answer2");
+        const down = document.getElementById("down2");
+        const up = document.getElementById("up2");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down.style.display = "none"
+          up.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down.style.display = "inline"
+          up.style.display = "none"
+        }
+      }
+
+      function showAnswer3() {
+        const answer = document.getElementById("answer3");
+        const down = document.getElementById("down3");
+        const up = document.getElementById("up1");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down.style.display = "none"
+          up.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down.style.display = "inline"
+          up.style.display = "none"
+        }
+      }
+
+      function showAnswer4() {
+        const answer = document.getElementById("answer4");
+        const down = document.getElementById("down4");
+        const up = document.getElementById("up1");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down.style.display = "none"
+          up.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down.style.display = "inline"
+          up.style.display = "none"
+        }
+      }
+
+      function showAnswer5() {
+        const answer = document.getElementById("answer5");
+        const down = document.getElementById("down5");
+        const up = document.getElementById("up5");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down.style.display = "none"
+          up.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down.style.display = "inline"
+          up.style.display = "none"
+        }
+      }
+
+      function showAnswer6() {
+        const answer = document.getElementById("answer6");
+        const down = document.getElementById("down6");
+        const up = document.getElementById("up6");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down.style.display = "none"
+          up.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down.style.display = "inline"
+          up.style.display = "none"
+        }
+      }
+
+      function showAnswer7() {
+        const answer = document.getElementById("answer7");
+        const down = document.getElementById("down7");
+        const up = document.getElementById("up7");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down.style.display = "none"
+          up.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down.style.display = "inline"
+          up.style.display = "none"
+        }
+      }
+
+      function showAnswer8() {
+        const answer = document.getElementById("answer8");
+        const down = document.getElementById("down8");
+        const up = document.getElementById("up8");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down.style.display = "none"
+          up.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down.style.display = "inline"
+          up.style.display = "none"
+        }
+      }
+
+      function showAnswer9() {
+        const answer = document.getElementById("answer9");
+        const down = document.getElementById("down9");
+        const up = document.getElementById("up9");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down.style.display = "none"
+          up.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down.style.display = "inline"
+          up.style.display = "none"
+        }
+      }
+
+      function showAnswer10() {
+        const answer = document.getElementById("answer10");
+        const down = document.getElementById("down10");
+        const up = document.getElementById("up10");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down.style.display = "none"
+          up.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down.style.display = "inline"
+          up.style.display = "none"
+        }
+      }
+
+      function showAnswer11() {
+        const answer = document.getElementById("answer11");
+        const down = document.getElementById("down11");
+        const up = document.getElementById("up11");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down.style.display = "none"
+          up.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down.style.display = "inline"
+          up.style.display = "none"
+        }
+      }
+
+      function showAnswer12() {
+        const answer = document.getElementById("answer12");
+        const down = document.getElementById("down12");
+        const up = document.getElementById("up12");
+
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+          down.style.display = "none"
+          up.style.display = "inline"
+        } else {
+          answer.style.display = "none";
+          down.style.display = "inline"
+          up.style.display = "none"
+        }
+      }
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+    </body>
+
+    </html>
