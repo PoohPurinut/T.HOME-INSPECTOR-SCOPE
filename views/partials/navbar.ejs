@@ -24,6 +24,10 @@
             background-color: #f2f2f2;
         }
 
+        .max-width-viedo {
+            max-width: 540px;
+        }
+
         #icon-card {
             background-color: #fff;
             border-radius: 11px;
@@ -64,8 +68,8 @@
         }
 
         #card-video {
-                font-size: 18px;
-            }
+            font-size: 18px;
+        }
 
 
         #answer1,
@@ -146,11 +150,43 @@
             max-width: 540px;
         }
 
-        @media (max-width: 576px) {
-            #max-width-viedo {
-                max-width: 400px;
+        @media (max-width: 1200px) {
+            #res-head-img {
+                font-size: 40px;
+                width: 900px;
             }
 
+            #res-title-img {
+                font-size: 16px;
+                width: 900px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            #res-head-img {
+                font-size: 35px;
+                width: 692px;
+            }
+
+            #res-title-img {
+                font-size: 15px;
+                width: 692px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #res-head-img {
+                font-size: 22px;
+                width: 468px;
+            }
+
+            #res-title-img {
+                font-size: 14px;
+                width: 468px;
+            }
+        }
+
+        @media (max-width: 576px) {
             #res-head-img {
                 font-size: 14px;
                 width: 320px;
@@ -159,11 +195,6 @@
             #res-title-img {
                 font-size: 9px;
                 width: 320px;
-            }
-
-            #res-head-btn {
-                font-size: 13.5px;
-                margin-bottom: 0;
             }
 
             .card-img-top {
@@ -235,8 +266,11 @@
                                 ตัวอย่างรายงานการตรวจ
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" target="_blank" href="https://drive.google.com/open?id=1gBsMQPBWEfx6zCXMjc9Pv1UtxtpOhe1P&usp=drive_fs">ตัวอย่างรายงานการตรวจบ้าน</a></li>
-                                <li><a class="dropdown-item" target="_blank" href="#">ตัวอย่างรายงานการตรวจคอนโด</a></li>
+                                <li><a class="dropdown-item" target="_blank"
+                                        href="https://drive.google.com/open?id=1gBsMQPBWEfx6zCXMjc9Pv1UtxtpOhe1P&usp=drive_fs">ตัวอย่างรายงานการตรวจบ้าน</a>
+                                </li>
+                                <li><a class="dropdown-item" target="_blank" href="#">ตัวอย่างรายงานการตรวจคอนโด</a>
+                                </li>
                             </ul>
                         </li>
                         <!-- <li class="nav-item">
