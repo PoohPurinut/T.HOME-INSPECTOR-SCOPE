@@ -54,7 +54,8 @@
             <div class="card h-100 border-0">
               <!-- <img src="https://img5.pic.in.th/file/secure-sv1/IMG_385622d9879ce70bb923.jpeg" class="card-img-top"
               alt="..."> -->
-              <img src="https://i.ibb.co/37NKRrr/IMG-3855.jpg" class="card-img-top" alt="..." style="max-width: 250px; margin: 0 auto;">
+              <img src="https://i.ibb.co/37NKRrr/IMG-3855.jpg" class="card-img-top" alt="..."
+                style="max-width: 250px; margin: 0 auto;">
               <div class="card-body p-0 pt-2" id="card-body">
                 <h5 class="card-title fw-bolder" id="res-head-btn">หมวดงานรั่วซึม</h5>
               </div>
@@ -75,7 +76,8 @@
         <div class="col">
           <a href="/architecture" class="text-decoration-none">
             <div class="card h-100 border-0">
-              <img src="https://i.ibb.co/ZmJ80NJ/IMG-4042.jpg" class="card-img-top" alt="..." style="max-width: 250px; margin: 0 auto;">
+              <img src="https://i.ibb.co/ZmJ80NJ/IMG-4042.jpg" class="card-img-top" alt="..."
+                style="max-width: 250px; margin: 0 auto;">
               <div class="card-body p-0 pt-2" id="card-body">
                 <h5 class="card-title fw-bolder" id="res-head-btn">หมวดงานสถาปัตยกรรม</h5>
               </div>
@@ -236,8 +238,8 @@
 
       <hr>
       <button onclick="showAnswer3()" class="button-question">
-        <div class="p-3 text-start question position-relative text-dark">บริษัทตรวจในเรื่องความสวยงามละเอียดไหม ?<svg id="down5"
-            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        <div class="p-3 text-start question position-relative text-dark">บริษัทตรวจในเรื่องความสวยงามละเอียดไหม ?<svg
+            id="down5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
             class="bi bi-caret-down-fill position-absolute top-50 end-0 translate-middle-y" viewBox="0 0 16 16"
             style="margin-right: 15px;">
             <path
@@ -288,14 +290,13 @@
 
     </div>
   </div>
-
+  <br>
+  <footer style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+    <p style="color: #666;">COPYRIGHT © BY ต.ตรวจบ้าน - ALL RIGHTS RESERVED</p>
+  </footer>
   <%- include('partials/scrollup.ejs') %>
-
-    <br>
-    <footer style="background-color: #f2f2f2; padding: 20px; text-align: center;">
-      <p style="color: #666;">COPYRIGHT © BY ต.ตรวจบ้าน - ALL RIGHTS RESERVED</p>
-    </footer>
-    <script>const scrollUp = document.querySelector("#scroll-up");
+    <script>
+      const scrollUp = document.querySelector("#scroll-up");
 
       scrollUp.addEventListener("click", () => {
         window.scrollTo({
@@ -304,7 +305,6 @@
           behavior: "smooth",
         });
       });
-
       function showAnswer1() {
         var answer = document.getElementById("answer1");
         var down1 = document.getElementById("down1");
